@@ -1,0 +1,12 @@
+<form input="type" method="Post" enctype="multipart/form-data">
+    {% csrf_token %}
+    model:<input type="text" name="model"><br><br>
+    style:<input type="text" name="style"><br><br>
+    fuel:<input type="text" name="fuel"><br><br>
+    seating:<input type="text" name="seating"><br><br>
+    transmission:<input type="text" name="transmission"><br><br>
+    price:<input type="text" name="price"><br><br>
+    profile_pic:<input type="file" name="profile"><br><br>
+
+    <input type="submit">
+</form>

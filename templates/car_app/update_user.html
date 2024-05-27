@@ -1,0 +1,35 @@
+
+
+<ul class="update">
+  <li><a class="{{post.model}}" href="#">Action</a></li>
+  <li><a class="{{post.body_style}}" href="#">Another action</a></li>
+  <li><hr class="update"></li>
+  <li><a class="dropdown-item" href="#">Something else here</a></li>
+</ul>
+          
+         
+
+<form class="d-flex" role="search">
+  <input class="{{post.model}}" type="text" placeholder="model" aria-label="Search">
+  <input class="{{post.body_style}}" type="text" placeholder="body_style" aria-label="Search">
+  <input class="{{post.fuel_type}}" type="text" placeholder="fuel_type" aria-label="Search">
+  <input class="{{post.seating capacity}}" type="text" placeholder="seating_capacity" aria-label="Search">
+  <input class="{{post.transmission_type}}" type="text" placeholder="transmission_type" aria-label="Search">
+  <input class="{{post.price_per_hour}}" type="text" placeholder="price_per_hour" aria-label="Search">
+  <button class="btn btn-outline-success" type="submit">update</button>
+</form>
+
+  </nav><form action="." method="POST">
+    {% csrf_token %}
+    model:<input type="text" name="model" value="{{post.model}}"><br><br>
+    style:<input type="text" name="style" value="{{post.body_style}}"><br><br>
+    fuel:<input type="text" name="fuel" value="{{post.fuel_type}}"><br><br>
+    seating:<input type="text" name="seating" value="{{post.seating_capacity}}"><br><br>
+    transmission:<input type="text" name="transmission" value="{{post.transmission_type}}"><br><br>
+    price:<input type="text" name="price" value="{{post.price_per_hour}}"><br><br>
+    price:<input type="text" name="profile_pic" value="{{post.profile_pic}}"><br><br>
+
+
+    <input type="submit">
+
+</form>
